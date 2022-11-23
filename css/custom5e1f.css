@@ -1,0 +1,8 @@
+.submitbtn {
+  	background: #195a2a !important;
+	color: #FFF !important;
+}
+
+[name="velkost_plochy"] {
+	width: 30%;
+}
