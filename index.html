@@ -588,38 +588,28 @@
           </div>
         </div>
        </section>
-	    <?php
-            $message1 = "";
-            if(isset($_POST['SubmitButton'])){ //check if form was submitted
-			  $message1= "The server failed to send the message. Please try again later.";
-			
-            
-              }    
-         ?>
+	   
 		 
 		
   
 	   <section class="ftco-section contact-section ftco-no-pb" id="rokon-section">
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form id="my_form" action="" method="post" class="bg-light p-4 p-md-5 contact-form">
-			  <div class="form-group">
-                 <?php echo $message; ?>
+            <form id="my_form" action="https://formspree.io/f/moqbzjea" method="POST" class="bg-light p-4 p-md-5 contact-form">
+              <div class="form-group">
+                <input type="text" id="n" name="Name" class="form-control" placeholder="Your Name" required>
               </div>
               <div class="form-group">
-                <input type="text" id="n" name="Name" class="form-control" placeholder="Your Name">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
               </div>
               <div class="form-group">
-                <input type="text" id="e" name="Email" class="form-control" placeholder="Your Email">
+                <input type="text" id="s" name="Subject"class="form-control" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <input type="text" id="s" name="Subject"class="form-control" placeholder="Subject">
+                <textarea  id="m" name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
               </div>
               <div class="form-group">
-                <textarea name="" id="m" name="Message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" name="SubmitButton" id="mybtn" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
             </form>
           
